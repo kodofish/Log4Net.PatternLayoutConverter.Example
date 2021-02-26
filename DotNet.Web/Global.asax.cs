@@ -11,8 +11,8 @@ namespace DotNet.Web
         {
             Logger.Info("Application Start...");
             
-            var log4netPath = Server.MapPath("~/log4net.config");
-            log4net.Config.XmlConfigurator.ConfigureAndWatch(new System.IO.FileInfo(log4netPath)); 
+            var log4NetPath = Server.MapPath("~/log4net.config");
+            log4net.Config.XmlConfigurator.ConfigureAndWatch(new System.IO.FileInfo(log4NetPath)); 
             
             WebApiConfig.Register(GlobalConfiguration.Configuration);
             
